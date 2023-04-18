@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main() {
+	
+char nome [50];
+float valor;
+int dia;
+
+	printf("Informe o seu nome: ");
+	scanf(" %[^\n]s",&nome);
+	
+	printf("Informe o valor do boleto: ");
+	scanf("%f",&valor);
+	
+	printf("Dias de atraso: ");
+	scanf("%d",&dia);
+
+
+//--------------------------------------------------------------
+
+float desconto = 0.3*valor;	
+
+
+	if (dia < 0){
+		printf("\nValor a ser pago: R$%.2f! \n",valor-desconto);
+	}else{
+		if (dia == 0){
+			printf("\nValor a ser pago: R$%.2f",valor);
+		}else{
+			if (dia == 15){
+				printf("\nAlerta de pagamento! Valor a ser pago: R$%.2f!",valor*0.1*15+valor);
+			}else{
+				if (dia == 20){
+					printf("\nEnvia cobrador! Valor a ser pago: R$%.2f!",valor*0.1*20+valor);
+				}else{
+					if (dia > 24){
+						printf("\nPerde o acesso! Valor a ser pago: R$%.2f!",valor*0.1*25+valor);
+					}else{
+						if (dia > 0){
+							printf("\nValor a ser pago: R$%.2f!",valor*0.1*dia+valor);
+						}else{
+						}
+					}
+				}
+			}
+		}
+	}
+	
+
+	
+	
+	return 0;
+}

@@ -1,0 +1,59 @@
+#include <stdio.h>
+ 
+int main() {
+	char nome[50];
+    float valor;
+	float desconto; //valor
+	int dias_atraso;
+	float percentual_multa;
+	float valor_multa;
+	float valor_final_boleto;
+ 
+	printf("Boletao\n");
+ 
+	printf("Informe o nome: ");
+	scanf("%[^\n]s",&nome);
+ 
+	fflush(stdin);
+ 
+	printf("valor: ");
+	scanf("%f",&valor);
+ 
+	printf("desconto: ");
+	scanf("%f",&desconto);
+ 
+	printf("dias de atraso: ");
+	scanf("%d",&dias_atraso);	
+ 
+	//------
+	percentual_multa = (10 * dias_atraso)/100.0; 
+ 
+	valor_multa = valor * percentual_multa;
+ 
+	valor_final_boleto = valor + valor_multa;	
+ 
+	getch();
+ 
+	if(dias_atraso<0){
+		printf("Valor a ser pago: R$ %.2f",valor-desconto);
+	}else{
+		if(dias_atraso==0){
+			printf("Valor a ser pago: %.2f", valor);
+		}else{
+			printf("Valor a ser pago: R$ %.2f\n",valor_final_boleto);
+			if(dias_atraso==15){
+				printf("*** Envia alerta\n");
+			}else{
+				if(dias_atraso==20){
+					printf("*** Envia cobrador\n");
+				}else{
+					if(dias_atraso>24){
+						printf("*** Cancela acesso\n");	
+					}
+				}
+			}
+		}	
+	}
+ 
+	return 0;
+}
