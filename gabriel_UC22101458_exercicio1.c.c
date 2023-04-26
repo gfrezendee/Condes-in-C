@@ -1,3 +1,5 @@
+//O código recebe uma idade e informa se o voto é opcional, obrigatório ou se não pode votar. Além disso, em duas idades específicas o usuário ganha um prêmio.
+
 #include <stdio.h>
 
 int main() {
