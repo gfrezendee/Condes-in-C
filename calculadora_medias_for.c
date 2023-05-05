@@ -1,4 +1,11 @@
+/*
+O código recebe 4 notas de 4 alunos, calcula a média delas e informa no final. Utiliza o "const" antes
+das variáveis para que seu valor não seja alterado e ciclos com "for" para receber e imprimir as notas 
+de diferentes alunos.
+*/
+
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void) {
 	
@@ -26,7 +33,5 @@ int main(void) {
 	for (aluno = 0; aluno < 4; ++aluno) {
 		printf("A media do aluno %i e: %.2f\n", aluno + 1, mediasAlunos[aluno]);
 	}
-	
-	
 	return 0;
 }
