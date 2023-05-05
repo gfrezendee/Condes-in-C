@@ -118,7 +118,7 @@ int main() {
         printf("E-mail: ");
         scanf(" %[^\n]s",Email);
         
-        printf("Contato do respons·vel(apenas para PJ): ");
+        printf("Contato do respons√°vel(apenas para PJ): ");
         scanf(" %[^\n]s",Contato);
         
         printf("Telefone comercial: ");
@@ -132,7 +132,7 @@ int main() {
         
         
         printf("\n");
-        printf("DADOS DOS VEÕCULOS\n");
+        printf("DADOS DOS VE√çCULOS\n");
         printf("\n");
         
         
@@ -183,7 +183,7 @@ int main() {
 	printf("Razao social: %s\n",Razao);
 	printf("Nome: %s\n",Nome);
 	printf("Endereco: %s\t",Endereco);
-	printf("N˙mero: %s\n",Numero);
+	printf("N√∫mero: %s\n",Numero);
 	printf("Complemento: %s\t",Complemento);
 	printf("Bairro: %s\n",Bairro);
 	printf("CEP: %s\n",CEP);
@@ -201,13 +201,13 @@ int main() {
 	printf("Data de nascimento: %s\t",Data1);
 	printf("Deseja receber os boletos por e-mail?: %s\n",Boleto);
 	printf("E-mail: %s\n",Email);
-	printf("Contato do Respons·vel: %s\t",Contato); 
+	printf("Contato do Respons√°vel: %s\t",Contato); 
 	printf("Telefone Comercial: %s\n",Telefone3);
 	printf("Data: %s\t \t",Data2);
 	printf("Assinatura do Responsavel: %s\n",Assinatura);
 	
 	printf("\n");
-    printf("DADOS DOS VEÕCULOS\n");
+    printf("DADOS DOS VE√çCULOS\n");
     printf("\n");
       
 	printf("Placa 1: %s\n",Placa1);  
