@@ -1,3 +1,8 @@
+/*
+O código recebe  duas notas, identifica se são válidas (entre 0 e 10), 
+calcula a média e informa se o aluno foi aprovado, apto a fazer recuperação ou reprovado.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -15,20 +20,20 @@ int main(void) {
 	scanf("%f",&nota2);
 	
 	if(nota1 > 10 || nota2 > 10){
-		printf("Nota inv�lida!");
+		printf("Nota inválida!");
 		return 0;
 	}else{
 		media = (nota1 + nota2)/2;
 	
 	printf("\n");
-	printf("A media �: %.2f", media);
+	printf("A media é: %.2f", media);
 	printf("\n");
 	
 	
 	if(media >= 7){
 		printf("Aluno APROVADO!");
 	}else if (media >= 4){
-		printf("Aluno apto para RECUPERA��O!");
+		printf("Aluno apto para RECUPERAÇÃO!");
 	}else{
 		printf("Aluno REPROVADO!");
 	}
