@@ -12,11 +12,11 @@ int dia;
 	printf("Informe o valor do boleto: ");
 	scanf("%f",&valor);
 	
-	printf("Dias de atraso: ");
+	printf("Dias de atraso (para adiantamento, utilize numero negativo): ");
 	scanf("%d",&dia);
 
 
-//--------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------
 
 float desconto = 0.3*valor;	
 
