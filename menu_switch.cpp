@@ -1,3 +1,8 @@
+/*
+O código utiliza um menu feito com do/while e switch, possibilitando calcular a força (com fórmula de física),
+ou a área e o perímetro de uma circunferência.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
