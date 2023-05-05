@@ -1,3 +1,8 @@
+/*
+O código calcula médias, mas utilizando um ciclo com while para calcular quantas vezes quiser, 
+sendo encerrado quando o usuário quiser.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
